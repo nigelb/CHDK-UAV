@@ -52,12 +52,12 @@ if get_drive_mode() == 1 then
 	print("                       ")
 	print("                       ")
 	print("                       ")
-	print("Waiting for tirgger up.")
+	print("Waiting for trigger up...")
 	while get_usb_power(1) ~= 1 do
 		sleep(100)
 	end
 
-	print("Waiting for tirgger down.")
+	print("Waiting for trigger down...")
 	while get_usb_power(1) == 1 do
 		sleep(100)
 	end
@@ -65,7 +65,7 @@ if get_drive_mode() == 1 then
 	press ("shoot_half")
 	sleep (500)
 	print("                       ")
-	print("Shooting continually!!")
+	print("Shooting continually!")
 	print("          **** ")
 	print("                       ")
 	
@@ -81,5 +81,5 @@ if get_drive_mode() == 1 then
 	release("shoot_half")
 	print ("Finished")
 else
-	print ("ERROR! Not in continuous mode!!!")
+	print ("ERROR! Not in continuous mode!")
 end
